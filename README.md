@@ -4,7 +4,7 @@
 
 项目使用 `jupyter notebook (ipython notebook)` 进行展示。
 
-`Github` 加载 `.ipynb` 的速度较慢，建议在 [Nbviewer](http://nbviewer.jupyter.org/github/longcd/Identifying-Fraud-from-Enron-Email/blob/master/text_classification.ipynb) 中查看该项目。
+`Github` 加载 `.ipynb` 的速度较慢，建议在 [Nbviewer](http://nbviewer.jupyter.org/github/longcd/Text-Classification-System/blob/master/text_classification.ipynb) 中查看该项目。
 
 ----
 
