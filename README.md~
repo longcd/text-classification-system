@@ -2,6 +2,23 @@
 
 本项目的目标是使用scikit-learn进行文本分类。
 
+项目使用 `jupyter notebook (ipython notebook)` 进行展示。
+
+`Github` 加载 `.ipynb` 的速度较慢，建议在 [Nbviewer](http://nbviewer.jupyter.org/github/longcd/Identifying-Fraud-from-Enron-Email/blob/master/text_classification.ipynb) 中查看该项目。
+
+----
+
+本项目将运用到以下知识：
+
+- TF-IDF
+- 朴素贝叶斯
+- 最近邻
+- 支持向量机
+- 参数调优
+- 验证
+- 评价
+
+
 ## 数据集
 
 数据集使用著名的[`20 Newsgrousps`](http://www.qwone.com/~jason/20Newsgroups/)新闻数据集，你可以从[这里](http://www.qwone.com/~jason/20Newsgroups/20news-bydate.tar.gz)下载。
@@ -40,7 +57,7 @@ testing time: 58.943000
 Accuracy: 0.83497079129
 ```
 
-### Experiment 2: kNN
+### Experiment 3: kNN
 
 使用k最近邻分类器进行训练及测试。
 
@@ -49,6 +66,16 @@ Results:
 training time: 3.943000
 testing time: 28.372000
 Accuracy: 0.675783324482
+```
+
+### Experiment 4: 优化后的SVM
+
+使用支持向量机分类器进行训练及测试。。
+
+Results:
+```
+Accuracy:  0.837095061073
+
 ```
 
 ## 总结
