@@ -4,7 +4,7 @@
 
 项目使用 `jupyter notebook (ipython notebook)` 进行展示。
 
-`Github` 加载 `.ipynb` 的速度较慢，建议在 [**英文文本分类**](http://nbviewer.jupyter.org/github/longcd/Text-Classification-System/blob/master/text_classification.ipynb) 和 [**中文文本分类**](http://nbviewer.jupyter.org/github/longcd/Text-Classification-System/Chinese_text_classification/blob/master/Chinese_text_classification.ipynb) 中查看该项目。
+`Github` 加载 `.ipynb` 的速度较慢，建议在 [**英文文本分类**](http://nbviewer.jupyter.org/github/longcd/Text-Classification-System/blob/master/text_classification.ipynb) 和 [**中文文本分类**](http://nbviewer.jupyter.org/github/longcd/Text-Classification-System/blob/master/Chinese_text_classification/Chinese_text_classification.ipynb) 中查看该项目。
 
 ----
 
@@ -27,7 +27,7 @@
 
 ### 中文文本
 
-使用[搜狐新闻数据(SogouCS)](http://www.sogou.com/labs/resource/cs.php)的精简版数据其中的一部分。
+使用[`搜狐新闻数据(SogouCS)`](http://www.sogou.com/labs/resource/cs.php)的精简版数据其中的一部分。
 
 ## 运行环境
 
