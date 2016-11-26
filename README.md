@@ -1,23 +1,17 @@
-# 使用scikit-learn进行文本分类
+# 文本分类
 
-本项目的目标是使用scikit-learn进行文本分类。
+文本分类，使用搜狗文本分类语料库
 
-项目使用 `jupyter notebook (ipython notebook)` 进行展示。
+## 1.主要步骤
 
-`Github` 加载 `.ipynb` 的速度较慢，建议在 [**英文文本分类**](http://nbviewer.jupyter.org/github/longcd/Text-Classification-System/blob/master/text_classification.ipynb) 和 [**中文文本分类**](http://nbviewer.jupyter.org/github/longcd/Text-Classification-System/blob/master/Chinese_text_classification/Chinese_text_classification.ipynb) 中查看该项目。
+- 文本分词处理
+- 特征选择
+- 特征权重计算
+- 文本特征向量表示
+- 训练模型并测试：kNN、NB、SVM
+- 使用爬虫抓取新闻并测试
 
-----
-
-本项目将运用到以下知识：
-
-- 分词
-- 文本向量化表示
-- 朴素贝叶斯
-- k最近邻
-- 参数调优
-- 分类器性能评价
-
-## 数据集
+## 2.数据集
 
 ### 英文文本
 
@@ -29,24 +23,27 @@
 
 使用[`搜狐新闻数据(SogouCS)`](http://www.sogou.com/labs/resource/cs.php)的精简版数据其中的一部分。
 
-## 运行环境
+## 3.运行环境
 
 - python 3.4
 - scikit-learn
 - numpy
 - jieba
 
-## 总结
+## 4.示例
 
-文本预处理过程包含的步骤总结如下：
+### 运行HTTP服务器
 
-- 切分文本（分词）
-- 删除出现过于频繁，而又对匹配相关文档没有帮助的词语（去停用词）
-- 删除出现频率很低，只有很小可能出现在文本中的词语（DF）
-- 考虑整个预料集合，从词频统计中计算TF-IDF值（向量化表示）
+![image](https://github.com/longcd/Text-Classification-System/raw/master/test0.png)
 
-通过这一过程，我们将一堆充满噪声的文本转换成了一个简明的特征表示。然而，虽然词袋模型及其扩展简单有效，但仍然有一些缺点需要注意：
+### 打开页面
 
-- 它并不涵盖词语之间的关联关系。比如文本”Car hits wall”和”Wall hits car”会有相同的特征向量。
-- 它没法捕捉否定关系。例如”I will eat ice cream”和”I will not eat ice cream”，尽管它们意思截然相反，但从特征向量来看它们非常相似。
-- 对于书写错误的词语会处理失败。
+![image](https://github.com/longcd/Text-Classification-System/raw/master/test1.png)
+
+### 今日头条上的新闻
+
+![image](https://github.com/longcd/Text-Classification-System/raw/master/test2.png)
+
+### 测试结果
+
+![image](https://github.com/longcd/Text-Classification-System/raw/master/test3.png)
